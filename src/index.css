@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Söhne Test";
+  src: url("../public/font/test-soehne-leicht.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: "Söhne Test";
+}
+
+.slideImage {
+  width: 425px;
+  height: 600px;
+  border-radius: 20px;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: white !important;
+  font-size: 17px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 16px !important;
+  opacity: 1 !important;
+  color: #888888 !important;
+}
+
+@media (min-width: 640px) {
+  .slideImage {
+    width: 280px;
+    height: 500px;
+  }
+  .slick-dots {
+    bottom: -40px !important;
+  }
+  .slick-dots li {
+    width: 20px !important;
+  }
+  .slick-dots li.slick-active button:before {
+    font-size: 24px !important;
+  }
+
+  .slick-dots li button:before {
+    font-size: 20px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slideImage {
+    width: 425px;
+    height: 600px;
+  }
+  .slick-dots {
+    bottom: -40px !important;
+  }
+  .slick-dots li {
+    width: 20px !important;
+  }
+  .slick-dots li.slick-active button:before {
+    font-size: 24px !important;
+  }
+
+  .slick-dots li button:before {
+    font-size: 20px !important;
+  }
+}
